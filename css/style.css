@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  padding: 5%;
+}
+
+.header .logo {
+  width: 46%;
+}
+
+.hero {
+  min-height: 30vh;
+  background-image: url("../images/hero-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  padding: 12% 5%;
+  text-align: center;
+}
+
+.content .title {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #413a3a;
+  margin-bottom: 2rem;
+}
+
+.content .accent {
+  font-weight: 300;
+  color: #ce9797;
+  line-height: 1.4;
+}
+
+.content .content-text {
+  color: #ce9797;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=style.css.map */

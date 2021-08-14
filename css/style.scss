@@ -1,0 +1,54 @@
+$font: 'Josefin Sans', sans-serif;
+
+$clr-red: hsl(0, 36%, 70%);
+$clr-soft-red: hsl(0, 93%, 68%);
+$clr-dark-grey:hsl(0, 6%, 24%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $font;
+    font-size: 16px;
+}
+.header{
+    padding: 5%;
+    .logo{
+        width: 46%;
+    }
+}
+
+.hero{
+    min-height: 30vh;
+    background-image: url("../images/hero-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{
+    padding: 12% 5%;
+    text-align: center;
+    .title{
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        color: $clr-dark-grey;
+        margin-bottom: 2rem;
+    }
+    .accent{
+        font-weight: 300;
+        color: $clr-red;
+        line-height: 1.4;
+    }
+    .content-text{
+        color: $clr-red;
+        line-height: 1.5;
+    }
+}
