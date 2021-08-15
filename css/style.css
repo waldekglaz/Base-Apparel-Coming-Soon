@@ -52,5 +52,98 @@ body {
 .content .content-text {
   color: #ce9797;
   line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+form .email, form .btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #ce9797;
+}
+
+form .email {
+  width: 100%;
+}
+
+form ::-webkit-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form :-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form ::-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form ::placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form .btn {
+  margin-left: -2.5rem;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+form .btn:hover {
+  background-image: none;
+  background-color: #ce9797;
+  cursor: pointer;
+}
+
+form .img-error {
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+
+.email-warning {
+  color: #f96262;
+  text-align: left;
+  font-size: 0.75rem;
+  padding-left: 1.5rem;
+  display: none;
+}
+
+.attribution {
+  color: #ce9797;
+  padding: 5%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.attribution a {
+  color: #413a3a;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+.attribution a:hover {
+  color: #f96262;
+  text-decoration: underline;
+}
+
+.active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
