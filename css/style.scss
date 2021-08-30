@@ -152,6 +152,11 @@ form{
     }
     .content{
         padding: 10% 8%;
+        text-align: left;
+        .title{
+            margin-left: 0;
+            font-size: 3rem;
+        }
     }
     .hero{
         background-image: url("../images/hero-desktop.jpg");

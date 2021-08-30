@@ -185,6 +185,11 @@ form .img-error {
   }
   .content {
     padding: 10% 8%;
+    text-align: left;
+  }
+  .content .title {
+    margin-left: 0;
+    font-size: 3rem;
   }
   .hero {
     background-image: url("../images/hero-desktop.jpg");
