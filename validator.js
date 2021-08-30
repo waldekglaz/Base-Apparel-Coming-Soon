@@ -24,24 +24,4 @@ btn.addEventListener('click', (e)=>{
         emailSucces.classList.add("active")
     }
 //     
-
 });
-
-
-
-//   const btnFunction = () => {
-//     const errorText = document.getElementsByClassName("email-warning");
-//     const errorImg = document.getElementsByClassName("img-error");
-//     const emailInput = document.getElementsByClassName("email");
-//     if(!checkEmail()) {
-//         errorText.style.display = "block"
-//     //   errorText[0].style.opacity = "100%";
-//     //   errorImg[0].style.opacity = "100%";
-//     //   emailInput[0].style.borderColor = "hsl(0, 93%, 68%)";
-//     }
-//     else {
-//       errorText[0].style.opacity = "0%";
-//       errorImg[0].style.opacity = "0%";
-//       emailInput[0].style.borderColor = "hsl(0, 36%, 70%)";
-//     }
-//   }
