@@ -5,8 +5,7 @@
           box-sizing: border-box;
 }
 
-body {
-  max-height: 100vh;
+.body {
   background-image: url("../images/bg-pattern-desktop.svg");
   background-position: center;
   background-size: cover;
@@ -17,6 +16,7 @@ body {
 
 .header {
   padding: 5%;
+  grid-area: header;
 }
 
 .header .logo {
@@ -29,11 +29,13 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  grid-area: hero;
 }
 
 .content {
   padding: 12% 5%;
   text-align: center;
+  grid-area: content;
 }
 
 .content .title {
@@ -124,8 +126,8 @@ form .img-error {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .email-warning,
@@ -137,11 +139,16 @@ form .img-error {
   display: none;
 }
 
+.footer {
+  grid-area: footer;
+}
+
 .attribution {
   color: #ce9797;
   padding: 5%;
   text-align: center;
   line-height: 1.4;
+  grid-area: footer;
 }
 
 .attribution a {
@@ -161,8 +168,36 @@ form .img-error {
 }
 
 @media (min-width: 768px) {
+  .body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "header hero" "content hero" "footer footer";
+  }
+  .header {
+    padding: 10% 12%;
+  }
   .header .logo {
-    width: 20%;
+    width: 30%;
+  }
+  .content {
+    padding: 10% 8%;
+  }
+  .hero {
+    background-image: url("../images/hero-desktop.jpg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .body {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+  .header, .content {
+    padding: 10% 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */
